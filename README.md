@@ -1,7 +1,7 @@
 # test coverage for  [express-validator (v3.1.3)](https://github.com/ctavan/express-validator)  [![npm package](https://img.shields.io/npm/v/npmtest-express-validator.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-validator) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-validator.svg)](https://travis-ci.org/npmtest/node-npmtest-express-validator)
 #### Express middleware for the validator module.
 
-[![NPM](https://nodei.co/npm/express-validator.png?downloads=true)](https://www.npmjs.com/package/express-validator)
+[![NPM](https://nodei.co/npm/express-validator.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/express-validator)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-express-validator/tree/alpha)|
 |--:|:--|
@@ -9,11 +9,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-express-validator/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-express-validator/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-validator/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-validator/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-express-validator/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-express-validator/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-express-validator/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-express-validator/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-express-validator/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-express-validator%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-express-validator/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-express-validator/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-express-validator/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-express-validator/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-express-validator%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-express-validator/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-express-validator/build/test-report.html](https://npmtest.github.io/node-npmtest-express-validator/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-express-validator/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-express-validator/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-express-validator/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-express-validator/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-express-validator/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-express-validator/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-express-validator/build/screenCapture.npmPackageListing.svg)
 
@@ -27,16 +33,14 @@
 
 {
     "author": {
-        "name": "Christoph Tavan",
-        "email": "dev@tavan.de"
+        "name": "Christoph Tavan"
     },
     "bugs": {
         "url": "https://github.com/ctavan/express-validator/issues"
     },
     "contributors": [
         {
-            "name": "Chris O'Hara",
-            "email": "cohara87@gmail.com"
+            "name": "Chris O'Hara"
         },
         {
             "name": "@orfaust"
@@ -45,20 +49,16 @@
             "name": "@zero21xxx"
         },
         {
-            "name": "Roman Kalyakin",
-            "email": "roman@kalyakin.com"
+            "name": "Roman Kalyakin"
         },
         {
-            "name": "Rusty Bailey",
-            "email": "rustylbailey@gmail.com"
+            "name": "Rusty Bailey"
         },
         {
-            "name": "Gustavo Henke",
-            "email": "guhenke@gmail.com"
+            "name": "Gustavo Henke"
         },
         {
-            "name": "Ayman Nedjmeddine",
-            "email": "theycallmethedr@gmail.com"
+            "name": "Ayman Nedjmeddine"
         }
     ],
     "dependencies": {
@@ -104,21 +104,17 @@
     "main": "./index.js",
     "maintainers": [
         {
-            "name": "ctavan",
-            "email": "dev@tavan.de"
+            "name": "ctavan"
         },
         {
-            "name": "gustavohenke",
-            "email": "guhenke@gmail.com"
+            "name": "gustavohenke"
         },
         {
-            "name": "rustybailey",
-            "email": "rustylbailey@gmail.com"
+            "name": "rustybailey"
         }
     ],
     "name": "express-validator",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/ctavan/express-validator.git"
