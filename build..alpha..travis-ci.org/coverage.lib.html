@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-express-validator/express-validator/lib/utils.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-express-validator/node_modules/express-validator/lib/utils.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-express-validator">npmtest-express-validator (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-express-validator/express-validator/lib/utils.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-express-validator/node_modules/express-validator/lib/utils.js</span></h1>
     <h2>
         
         Statements: <span class="metric">11.11% <small>(4 / 36)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-express-validator/express-validator/lib/</a> » utils.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-express-validator/node_modules/express-validator/lib/</a> &#187; utils.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -356,75 +358,74 @@ module.exports = exports = {};
 &nbsp;
 // Convert nested params as array into string for output
 // Ex: ['users', '0', 'fields', 'email'] to 'users[0].fields.email'
-exports.formatParamOutput = <span class="fstat-no" title="function not covered">function formatParamOutput(param) {</span>
-<span class="cstat-no" title="statement not covered">  if (Array.isArray(param)) {</span>
-<span class="cstat-no" title="statement not covered">    param = param.reduce(<span class="fstat-no" title="function not covered">function(prev, curr) {</span></span>
-<span class="cstat-no" title="statement not covered">      var part = '';</span>
-<span class="cstat-no" title="statement not covered">      if (validator.isInt(curr)) {</span>
-<span class="cstat-no" title="statement not covered">        part = '[' + curr + ']';</span>
+exports.formatParamOutput = <span class="fstat-no" title="function not covered" >function formatParamOutput(param) {</span>
+<span class="cstat-no" title="statement not covered" >  if (Array.isArray(param)) {</span>
+<span class="cstat-no" title="statement not covered" >    param = param.reduce(<span class="fstat-no" title="function not covered" >function(prev, curr) {</span></span>
+<span class="cstat-no" title="statement not covered" >      var part = '';</span>
+<span class="cstat-no" title="statement not covered" >      if (validator.isInt(curr)) {</span>
+<span class="cstat-no" title="statement not covered" >        part = '[' + curr + ']';</span>
       } else {
-<span class="cstat-no" title="statement not covered">        if (prev) {</span>
-<span class="cstat-no" title="statement not covered">          part = '.' + curr;</span>
+<span class="cstat-no" title="statement not covered" >        if (prev) {</span>
+<span class="cstat-no" title="statement not covered" >          part = '.' + curr;</span>
         } else {
-<span class="cstat-no" title="statement not covered">          part = curr;</span>
+<span class="cstat-no" title="statement not covered" >          part = curr;</span>
         }
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      return prev + part;</span>
+<span class="cstat-no" title="statement not covered" >      return prev + part;</span>
     });
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return param;</span>
+<span class="cstat-no" title="statement not covered" >  return param;</span>
 };
 &nbsp;
-exports.decorateAsValidationResult = <span class="fstat-no" title="function not covered">function decorateAsValidationResult(obj, errors) {</span>
-<span class="cstat-no" title="statement not covered">  var onlyFirstError = false;</span>
+exports.decorateAsValidationResult = <span class="fstat-no" title="function not covered" >function decorateAsValidationResult(obj, errors) {</span>
+<span class="cstat-no" title="statement not covered" >  var onlyFirstError = false;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  obj.isEmpty = <span class="fstat-no" title="function not covered">function isEmpty() {</span></span>
-<span class="cstat-no" title="statement not covered">    return !errors.length;</span>
+<span class="cstat-no" title="statement not covered" >  obj.isEmpty = <span class="fstat-no" title="function not covered" >function isEmpty() {</span></span>
+<span class="cstat-no" title="statement not covered" >    return !errors.length;</span>
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered">  obj.array = <span class="fstat-no" title="function not covered">function allErrors() {</span></span>
-<span class="cstat-no" title="statement not covered">    var used = {};</span>
-<span class="cstat-no" title="statement not covered">    return !onlyFirstError ? errors : errors.filter(<span class="fstat-no" title="function not covered">function(error) {</span></span>
-<span class="cstat-no" title="statement not covered">      if (used[error.param]) {</span>
-<span class="cstat-no" title="statement not covered">        return false;</span>
+<span class="cstat-no" title="statement not covered" >  obj.array = <span class="fstat-no" title="function not covered" >function allErrors() {</span></span>
+<span class="cstat-no" title="statement not covered" >    var used = {};</span>
+<span class="cstat-no" title="statement not covered" >    return !onlyFirstError ? errors : errors.filter(<span class="fstat-no" title="function not covered" >function(error) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (used[error.param]) {</span>
+<span class="cstat-no" title="statement not covered" >        return false;</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      used[error.param] = true;</span>
-<span class="cstat-no" title="statement not covered">      return true;</span>
+<span class="cstat-no" title="statement not covered" >      used[error.param] = true;</span>
+<span class="cstat-no" title="statement not covered" >      return true;</span>
     });
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered">  obj.mapped = <span class="fstat-no" title="function not covered">function mappedErrors() {</span></span>
-<span class="cstat-no" title="statement not covered">    return errors.reduce(<span class="fstat-no" title="function not covered">function(mapping, error) {</span></span>
-<span class="cstat-no" title="statement not covered">      if (!onlyFirstError || !mapping[error.param]) {</span>
-<span class="cstat-no" title="statement not covered">        mapping[error.param] = error;</span>
+<span class="cstat-no" title="statement not covered" >  obj.mapped = <span class="fstat-no" title="function not covered" >function mappedErrors() {</span></span>
+<span class="cstat-no" title="statement not covered" >    return errors.reduce(<span class="fstat-no" title="function not covered" >function(mapping, error) {</span></span>
+<span class="cstat-no" title="statement not covered" >      if (!onlyFirstError || !mapping[error.param]) {</span>
+<span class="cstat-no" title="statement not covered" >        mapping[error.param] = error;</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      return mapping;</span>
+<span class="cstat-no" title="statement not covered" >      return mapping;</span>
     }, {});
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered">  obj.useFirstErrorOnly = <span class="fstat-no" title="function not covered">function useFirstErrorOnly(flag) {</span></span>
-<span class="cstat-no" title="statement not covered">    onlyFirstError = flag === undefined || flag;</span>
-<span class="cstat-no" title="statement not covered">    return obj;</span>
+<span class="cstat-no" title="statement not covered" >  obj.useFirstErrorOnly = <span class="fstat-no" title="function not covered" >function useFirstErrorOnly(flag) {</span></span>
+<span class="cstat-no" title="statement not covered" >    onlyFirstError = flag === undefined || flag;</span>
+<span class="cstat-no" title="statement not covered" >    return obj;</span>
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered">  obj.throw = <span class="fstat-no" title="function not covered">function throwError() {</span></span>
-<span class="cstat-no" title="statement not covered">    if (errors.length) {</span>
-<span class="cstat-no" title="statement not covered">      throw decorateAsValidationResult(new Error('Validation failed'), errors);</span>
+<span class="cstat-no" title="statement not covered" >  obj.throw = <span class="fstat-no" title="function not covered" >function throwError() {</span></span>
+<span class="cstat-no" title="statement not covered" >    if (errors.length) {</span>
+<span class="cstat-no" title="statement not covered" >      throw decorateAsValidationResult(new Error('Validation failed'), errors);</span>
     }
   };
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return obj;</span>
+<span class="cstat-no" title="statement not covered" >  return obj;</span>
 };
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 08:38:09 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Mon Apr 17 2017 15:11:53 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
